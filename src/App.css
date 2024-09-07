@@ -1,38 +1,106 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Ensure body and html are styled correctly */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+  background-size: 300% 300%;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+/* Style for the App container */
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Fixed header style */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+  z-index: 1000; /* Ensure header stays on top */
+}
+
+/* Fixed navigation buttons style */
+.nav-buttons {
+  position: fixed;
+  top: 60px; /* Adjust based on header height */
+  left: 0;
+  top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure buttons stay on top */
+  
+}
+
+/* Navigation buttons styling */
+.nav-button {
+  background-color: #ffffff7a;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+.nav-button:hover {
+  background-color: #ffffff;
+}
+
+/* Main content area styling */
+.App-main {
+  flex: 1;
+  padding: 20px;
+  margin-top: 120px; /* Adjust based on header and button height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  
+}
+
+/* Container for components */
+.component-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, border-color 0.3s;
+  position: fixed;
 }

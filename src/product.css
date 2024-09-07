@@ -1,0 +1,82 @@
+/* Container for the product search component */
+.product-search {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid #00000054; /* White border */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  /* Heading style */
+  .search-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Input styling */
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  .search-button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1f201f6f; /* Green background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Product information styling */
+  .product-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #4af800a5; /* Semi-transparent black background */
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+  }
+  
+  .product-info:hover {
+    background-color: #333333; /* Darker background on hover */
+    border-color: #ffffff; /* Maintain white border on hover */
+  }
+  
+  /* Product information text styling */
+  .product-info p {
+    margin: 5px 0;
+  }
+  /* Error message styling */
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  

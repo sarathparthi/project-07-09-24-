@@ -1,0 +1,106 @@
+/* Container for the barcode scanner component */
+.barcode-scanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Heading style */
+.scanner-heading {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button style */
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #4caf50; /* Green background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.toggle-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Webcam container styling */
+.webcam-container {
+  margin-bottom: 20px;
+}
+
+/* Barcode data heading style */
+.barcode-data-heading {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Barcode data text style */
+.barcode-data {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.scanner-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Input field styling */
+.input-field {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%; /* Full width for better appearance */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Submit button styling */
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #4caf50; /* Green background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Label styling */
+.scanner-form label {
+  font-size: 16px;
+  color: black; /* Change text color to black */
+  margin-bottom: 10px;
+  display: block; /* Ensure the label takes the full width available */
+}
+
+/* Text inside the webcam container */
+.webcam-container p {
+  color: black; /* Change text color to black */
+  font-size: 18px; /* Adjust font size if needed */
+  margin-bottom: 10px; /* Add space below the text */
+}
+
