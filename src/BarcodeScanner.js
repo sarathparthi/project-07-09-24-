@@ -4,7 +4,7 @@ import jsQR from 'jsqr';
 import './barcode.css'; // Ensure you import the CSS file
 
 const BarcodeScanner = () => {
-  const [barcodeData, setBarcodeData] = useState("No barcode scanned yet");
+  const [barcodeData, setBarcodeData] = useState("No QR Code scanned yet");
   const [cameraActive, setCameraActive] = useState(false);
   const [manualId, setManualId] = useState("");
   const [productName, setProductName] = useState("");

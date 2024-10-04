@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch,Link,useLocation} from 'react-router-dom';
+
 import './App.css';
+import ProductTable from './ProductTable'; // Ensure the path is correct
 
 function App() {
   const location = useLocation();
   const [showWelcome, setShowWelcome] = useState(true);
+  const [showTable, setShowTable] = useState(false);
 
   useEffect(() => {
     // Show the welcome message only on the home page
@@ -14,6 +17,11 @@ function App() {
       setShowWelcome(false);
     }
   }, [location]);
+
+  // Function to toggle the display of the ProductTable
+  const toggleTableVisibility = () => {
+    setShowTable(prevState => !prevState); // Toggle the visibility
+  };
 
   return (
     <div className="App">
@@ -36,6 +44,11 @@ function App() {
             Open Product Search
           </button>
         </Link>
+        <Link to ="/table">
+          <button className="nav-button">
+              Show Table
+          </button>
+        </Link>
       </div>
       
       <main className="App-main">
@@ -43,7 +56,7 @@ function App() {
           {showWelcome && <h2>Welcome to the Online Store</h2>}
         </div>
       </main>
-    </div>  
+    </div>
   );
 }
 

@@ -1,0 +1,71 @@
+/* Main container styling */
+.main-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 120px; /* Adjust as necessary */
+}
+
+/* Title container styling */
+.title-container {
+  text-align: center;
+  margin-bottom: 20px; /* Space between title and table */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.516); /* Light background for the title container */
+  border-radius: 8px;
+}
+
+/* Page title styling */
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Table container styling */
+.table-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: relative;
+  top: 25px;
+}
+
+/* Table styling */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table header styling */
+.table-container th {
+  background-color: #ffffff; /* White background for header */
+  color: #000000; /* Black text color for header */
+  border: 1px solid #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Table cell styling */
+.table-container td {
+  border: 1px solid #ff0000;
+  padding: 10px;
+  text-align: left;
+  color: #000000; /* Black text color for data cells */
+}
+
+/* Alternating row background colors */
+.table-container tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray background for even rows */
+  color: #000000; /* Black text color for even rows */
+}
+
+.table-container tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+  color: #000000; /* Black text color for odd rows */
+}

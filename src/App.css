@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 /* Ensure body and html are styled correctly */
@@ -16,7 +15,6 @@ body, html {
   background-size: 300% 300%;
   color: #ffffff;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
 }
 
 /* Style for the App container */
@@ -24,7 +22,6 @@ body, html {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  
 }
 
 /* Fixed header style */
@@ -54,7 +51,6 @@ body, html {
   gap: 20px;
   padding: 10px 0;
   z-index: 1000; /* Ensure buttons stay on top */
-  
 }
 
 /* Navigation buttons styling */
@@ -84,7 +80,6 @@ body, html {
   justify-content: center;
   align-items: center;
   overflow-y: auto;
-  
 }
 
 /* Container for components */
@@ -102,5 +97,5 @@ body, html {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, border-color 0.3s;
-  position: fixed;
 }
+
